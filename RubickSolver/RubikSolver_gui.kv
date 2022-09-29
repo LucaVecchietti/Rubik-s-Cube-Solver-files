@@ -1,0 +1,523 @@
+<ColorPopup@Popup>:
+    id: color_popup
+    size_hint: None, None
+    size: "400dp", "150dp"
+    BoxLayout:
+        orientation: 'horizontal'
+        padding: "10dp", "20dp", "10dp", "20dp"
+        spacing: "15dp"
+        Button:
+            background_color: 255, 255, 255, 1
+            size: "45dp", "45dp"
+            on_press: root.dismiss()
+            on_press: root.white_button()
+            on_release: root.change_color()
+        Button:
+            background_color: 0, 0, 255, 1
+            size: "45dp", "45dp"
+            on_press: root.dismiss()
+            on_press: root.blue_button()
+            on_release: root.change_color()
+        Button:
+            background_color: 255, 0, 0, 1
+            size: "45dp", "45dp"
+            on_press: root.dismiss()
+            on_press: root.red_button()
+            on_release: root.change_color()
+        Button:
+            background_color: 0, 255, 0, 1
+            size: "45dp", "45dp"
+            on_press: root.dismiss()
+            on_press: root.green_button()
+            on_release: root.change_color()
+        Button:
+            background_color: 255, .7, 0, 1
+            size: "45dp", "45dp"
+            on_press: root.dismiss()
+            on_press: root.orange_button()
+            on_release: root.change_color()
+        Button:
+            background_color: 255, 255, .2, 1
+            size: "45dp", "45dp"
+            on_press: root.dismiss()
+            on_press: root.yellow_button()
+            on_release: root.change_color()
+
+
+<MainRubikWindow>:
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            size_hint: 1, .2
+            Label:
+                id: title_window
+                text: "Rubik's Solver"
+        BoxLayout:
+            orientation: "vertical"
+            id: cube_config
+            Label:
+                text: "Face 1"
+                size_hint: 1, .1
+            BoxLayout:
+                Label:
+                    text: "space"
+                    size_hint: .75, 1
+                GridLayout:
+                    cols: 4
+                    rows: 3
+                    spacing: "50dp", "50dp"
+                    AnchorLayout:
+                        size_hint: None, None
+                        Label:
+                            text: "1"
+                    GridLayout:
+                        cols: 3
+                        rows: 3
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        spacing: "5dp", "5dp"
+                        padding: "40dp", "40dp", "40dp", "40dp"
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: root.face6_0_cliked()
+                            on_press: Factory.ColorPopup().open()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_1_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_2_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_3_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_4_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_5_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_6_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_7_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, .2, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face6_8_cliked()
+                    AnchorLayout:
+                        size_hint: None, None
+                        Label:
+                            text: "1"
+                    AnchorLayout:
+                        size_hint: None, None
+                        Label:
+                            text: "1"
+                    GridLayout:
+                        cols: 3
+                        rows: 3
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        spacing: "5dp", "5dp"
+                        padding: "40dp", "40dp", "40dp", "40dp"
+                        Button:
+                            id: face2_button0
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_0_cliked()
+                        Button:
+                            id: face2_button1
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_1_cliked()
+                        Button:
+                            id: face2_button2
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_2_cliked()
+                        Button:
+                            id: face2_button3
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_3_cliked()
+                        Button:
+                            id: face2_button4
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_4_cliked()
+                        Button:
+                            id: face2_button5
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_5_cliked()
+                        Button:
+                            id: face2_button6
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_6_cliked()
+                        Button:
+                            id: face2_button7
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_7_cliked()
+                        Button:
+                            id: face2_button8
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 0, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face2_8_cliked()
+                    GridLayout:
+                        cols: 3
+                        rows: 3
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        spacing: "5dp", "5dp"
+                        padding: "40dp", "40dp", "40dp", "40dp"
+                        Button:
+                            id: face3_button0
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_0_cliked()
+                        Button:
+                            id: face3_button1
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_1_cliked()
+                        Button:
+                            id: face3_button2
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_2_cliked()
+                        Button:
+                            id: face3_button3
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_3_cliked()
+                        Button:
+                            id: face3_button4
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_4_cliked()
+                        Button:
+                            id: face3_button5
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_5_cliked()
+                        Button:
+                            id: face3_button6
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_6_cliked()
+                        Button:
+                            id: face3_button7
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_7_cliked()
+                        Button:
+                            id: face3_button8
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 0, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face3_8_cliked()
+                    GridLayout:
+                        cols: 3
+                        rows: 3
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        spacing: "5dp", "5dp"
+                        padding: "40dp", "40dp", "40dp", "40dp"
+                        Button:
+                            id: face4_button0
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_0_cliked()
+                        Button:
+                            id: face4_button1
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_1_cliked()
+                        Button:
+                            id: face4_button2
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_2_cliked()
+                        Button:
+                            id: face4_button3
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_3_cliked()
+                        Button:
+                            id: face4_button4
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_4_cliked()
+                        Button:
+                            id: face4_button5
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_5_cliked()
+                        Button:
+                            id: face4_button6
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_6_cliked()
+                        Button:
+                            id: face4_button7
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_7_cliked()
+                        Button:
+                            id: face4_button8
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 0, 255, 0, 1
+                            on_press: root.color_selection()
+                            on_press: root.face4_8_cliked()
+                    GridLayout:
+                        cols: 3
+                        rows: 3
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        spacing: "5dp", "5dp"
+                        padding: "40dp", "40dp", "40dp", "40dp"
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_0_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_1_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_2_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_3_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_4_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_5_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_6_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_7_cliked()
+                        Button:
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, .7, 0, 1
+                            on_press: Factory.ColorPopup().open()
+                            on_press: root.face5_8_cliked()
+                    AnchorLayout:
+                        size_hint: None, None
+                        Label:
+                            text: "1"
+                    GridLayout:
+                        cols: 3
+                        rows: 3
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        spacing: "5dp", "5dp"
+                        padding: "40dp", "40dp", "40dp", "40dp"
+                        Button:
+                            id: face1_button0
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_0_cliked()
+                        Button:
+                            id: face1_button1
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_1_cliked()
+                        Button:
+                            id: face1_button2
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_2_cliked()
+                        Button:
+                            id: face1_button3
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_3_cliked()
+                        Button:
+                            id: face1_button4
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                        Button:
+                            id: face1_button5
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_5_cliked()
+                        Button:
+                            id: face1_button6
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_6_cliked()
+                        Button:
+                            id: face1_button7
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_7_cliked()
+                        Button:
+                            id: face1_button8
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            background_color: 255, 255, 255, 1
+                            on_press: root.color_selection()
+                            on_press: root.face1_8_cliked()
+                    AnchorLayout:
+                        size_hint: None, None
+                        Label:
+                            text: "1"
+                    AnchorLayout:
+                        size_hint: None, None
+                        Label:
+                            text: "1"
+                Label:
+                    text: "space"
+                    #size_hint: .25, 1
+        BoxLayout:
+            id: alg_viewer
+            size_hint: 1, .2
+            Label:
+                #text: root.alg
+    AnchorLayout:
+        anchor_x: "right"
+        BoxLayout:
+            orientation: "vertical"
+            size_hint: .2, 1
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
+            Button:
