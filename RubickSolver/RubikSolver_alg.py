@@ -11515,47 +11515,140 @@ def rubik_solver_function():
                 RPf()
                 # )
         if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:
-            if face5[1] == face4[5] and face6[1] == face2[4]:
+            if face5[1] == face5[4] and face6[1] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face2[1] == face5[4] and face6[3] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face3[1] == face5[4] and face6[7] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face4[1] == face5[4] and face6[5] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face5[1] == face2[4] and face6[1] == face5[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face2[1] == face2[4] and face6[3] == face5[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face3[1] == face2[4] and face6[7] == face5[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face4[1] == face2[4] and face6[5] == face5[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face5[1] == face5[5] and face2[3] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face5[1] == face2[5] and face2[3] == face5[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face2[1] == face5[5] and face3[3] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face2[1] == face2[5] and face3[3] == face5[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face3[1] == face5[5] and face4[3] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face3[1] == face2[5] and face4[3] == face5[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face4[1] == face5[5] and face5[3] == face2[4]:
 
-            elif face5[1] == face4[5] and face6[1] == face2[4]:
+            elif face4[1] == face2[5] and face5[3] == face5[4]:
 
         if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:  # se abs si trova i aad nella faccia 4
+          if face5[1] == face5[4] and face6[1] == face2[4]:
+
+            elif face2[1] == face5[4] and face6[3] == face2[4]:
+
+            elif face3[1] == face5[4] and face6[7] == face2[4]:
+
+            elif face4[1] == face5[4] and face6[5] == face2[4]:
+
+            elif face5[1] == face2[4] and face6[1] == face5[4]:
+
+            elif face2[1] == face2[4] and face6[3] == face5[4]:
+
+            elif face3[1] == face2[4] and face6[7] == face5[4]:
+
+            elif face4[1] == face2[4] and face6[5] == face5[4]:
+
+            elif face5[1] == face5[5] and face2[3] == face2[4]:
+
+            elif face5[1] == face2[5] and face2[3] == face5[4]:
+
+            elif face2[1] == face5[5] and face3[3] == face2[4]:
+
+            elif face2[1] == face2[5] and face3[3] == face5[4]:
+
+            elif face3[1] == face5[5] and face4[3] == face2[4]:
+
+            elif face3[1] == face2[5] and face4[3] == face5[4]:
+
+            elif face4[1] == face5[5] and face5[3] == face2[4]:
+
+            elif face4[1] == face2[5] and face5[3] == face5[4]:
 
         if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:  # se abs si trova i abs nella faccia 4
+          if face5[1] == face5[4] and face6[1] == face2[4]:
+
+            elif face2[1] == face5[4] and face6[3] == face2[4]:
+
+            elif face3[1] == face5[4] and face6[7] == face2[4]:
+
+            elif face4[1] == face5[4] and face6[5] == face2[4]:
+
+            elif face5[1] == face2[4] and face6[1] == face5[4]:
+
+            elif face2[1] == face2[4] and face6[3] == face5[4]:
+
+            elif face3[1] == face2[4] and face6[7] == face5[4]:
+
+            elif face4[1] == face2[4] and face6[5] == face5[4]:
+
+            elif face5[1] == face5[5] and face2[3] == face2[4]:
+
+            elif face5[1] == face2[5] and face2[3] == face5[4]:
+
+            elif face2[1] == face5[5] and face3[3] == face2[4]:
+
+            elif face2[1] == face2[5] and face3[3] == face5[4]:
+
+            elif face3[1] == face5[5] and face4[3] == face2[4]:
+
+            elif face3[1] == face2[5] and face4[3] == face5[4]:
+
+            elif face4[1] == face5[5] and face5[3] == face2[4]:
+
+            elif face4[1] == face2[5] and face5[3] == face5[4]:
 
         if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:  # se abs si trova i abd nella faccia 4
+          if face5[1] == face5[4] and face6[1] == face2[4]:
 
-        # if white corners are in face5
+            elif face2[1] == face5[4] and face6[3] == face2[4]:
 
-        # if white corners are in face6
+            elif face3[1] == face5[4] and face6[7] == face2[4]:
+
+            elif face4[1] == face5[4] and face6[5] == face2[4]:
+
+            elif face5[1] == face2[4] and face6[1] == face5[4]:
+
+            elif face2[1] == face2[4] and face6[3] == face5[4]:
+
+            elif face3[1] == face2[4] and face6[7] == face5[4]:
+
+            elif face4[1] == face2[4] and face6[5] == face5[4]:
+
+            elif face5[1] == face5[5] and face2[3] == face2[4]:
+
+            elif face5[1] == face2[5] and face2[3] == face5[4]:
+
+            elif face2[1] == face5[5] and face3[3] == face2[4]:
+
+            elif face2[1] == face2[5] and face3[3] == face5[4]:
+
+            elif face3[1] == face5[5] and face4[3] == face2[4]:
+
+            elif face3[1] == face2[5] and face4[3] == face5[4]:
+
+            elif face4[1] == face5[5] and face5[3] == face2[4]:
+
+            elif face4[1] == face2[5] and face5[3] == face5[4]:
+
+        # if white corners are in face5 (missing)
+
+        # if white corners are in face6 (missing)
 
         j+=1
         if j == 5:
@@ -11580,9 +11673,9 @@ def rubik_solver_function():
         alg = " "
 
         # OLL
-        # concondition for the resolution of the OLL
+        # concondition for the resolution of the OLL (missing)
 
         # PLL
-        # concondition for the resolution of the PLL
+        # concondition for the resolution of the PLL (missing)
 
 rubik_solver_function()
