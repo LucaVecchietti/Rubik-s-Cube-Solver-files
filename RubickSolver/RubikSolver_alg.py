@@ -11514,137 +11514,510 @@ def rubik_solver_function():
                 Bf()
                 RPf()
                 # )
+                if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:
+            if face5[1] == face5[4] and face6[1] == face2[4]:
+                U2f()
+                Lf()
+                U2f()
+                LPf()
+                Uf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face2[1] == face5[4] and face6[3] == face2[4]:
+                BPf()
+                UPf()
+                Bf()
+                UPf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face3[1] == face5[4] and face6[7] == face2[4]:
+                UPf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face4[1] == face5[4] and face6[5] == face2[4]:
+                BPf()
+                Uf()
+                Bf()
+                UPf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face5[1] == face2[4] and face6[1] == face5[4]:
+                Lf()
+                UPf()
+                LPf()
+            elif face2[1] == face2[4] and face6[3] == face5[4]:
+                U2f()
+                Lf()
+                Uf()
+                LPf()
+                Uf()
+                # (
+                LPf()
+                Bf()
+                Lf()
+                BPf()
+                # )
+            elif face3[1] == face2[4] and face6[7] == face5[4]:
+                U2f()
+                Lf()
+                # (
+                LPf()
+                Bf()
+                Lf()
+                BPf()
+                # )
+            elif face4[1] == face2[4] and face6[5] == face5[4]:
+                BPf()
+                U2f()
+                Bf()
+                U2f()
+                Lf()
+                Uf()
+                LPf()
+                Uf()
+                # (
+                LPf()
+                Bf()
+                Lf()
+                BPf()
+                # )
+            elif face5[5] == face5[4] and face2[3] == face2[4]:
+                BPf()
+                U2f()
+                Bf()
+                UPf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face5[5] == face2[4] and face2[3] == face5[4]:
+                Uf()
+                Lf()
+                UPf()
+                LPf()
+                UPf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face2[5] == face5[4] and face3[3] == face2[4]:
+                Uf()
+                LPf()
+                UPf()
+                Lf()
+                Uf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face2[5] == face2[4] and face3[3] == face5[4]:
+                Ff()
+                UPf()
+                FPf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face3[5] == face5[4] and face4[3] == face2[4]:
+                FPf()
+                UPf()
+                Ff()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face3[5] == face2[4] and face4[3] == face5[4]:
+                Rf()
+                Uf()
+                RPf()
+                UPf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face4[5] == face5[4] and face5[3] == face2[4]:
+                UPf()
+                RPf()
+                UPf()
+                Rf()
+                Uf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
+            elif face4[5] == face2[4] and face5[3] == face5[4]:
+                UPf()
+                Bf()
+                Uf()
+                B2f()
+                UPf()
+                Bf()
+                # )
         if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:
             if face5[1] == face5[4] and face6[1] == face2[4]:
-
+                U2f()
+                Rf()
+                Uf()
+                RPf()
+                # (
+                BPf()
+                Uf()
+                Bf()
+                # )
             elif face2[1] == face5[4] and face6[3] == face2[4]:
-
+                UPf()
+                Rf()
+                Uf()
+                RPf()
+                # (
+                BPf()
+                Uf()
+                Bf()
+                # )
             elif face3[1] == face5[4] and face6[7] == face2[4]:
-
+                Rf()
+                Uf()
+                RPf()
+                # (
+                BPf()
+                Uf()
+                Bf()
+                # )
             elif face4[1] == face5[4] and face6[5] == face2[4]:
-
+                Uf()
+                Rf()
+                Uf()
+                RPf()
+                # (
+                BPf()
+                Uf()
+                Bf()
+                # )
             elif face5[1] == face2[4] and face6[1] == face5[4]:
-
+                Uf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                Lf()
+                Uf()
+                LPf()
+                # )
             elif face2[1] == face2[4] and face6[3] == face5[4]:
-
+                U2f()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                Lf()
+                Uf()
+                LPf()
+                # )
             elif face3[1] == face2[4] and face6[7] == face5[4]:
-
+                UPf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                Lf()
+                Uf()
+                LPf()
+                # )
             elif face4[1] == face2[4] and face6[5] == face5[4]:
-
-            elif face5[1] == face5[5] and face2[3] == face2[4]:
-
-            elif face5[1] == face2[5] and face2[3] == face5[4]:
-
-            elif face2[1] == face5[5] and face3[3] == face2[4]:
-
-            elif face2[1] == face2[5] and face3[3] == face5[4]:
-
-            elif face3[1] == face5[5] and face4[3] == face2[4]:
-
-            elif face3[1] == face2[5] and face4[3] == face5[4]:
-
-            elif face4[1] == face5[5] and face5[3] == face2[4]:
-
-            elif face4[1] == face2[5] and face5[3] == face5[4]:
-
-        if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:  # se abs si trova i aad nella faccia 4
-          if face5[1] == face5[4] and face6[1] == face2[4]:
-
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                Lf()
+                Uf()
+                LPf()
+                # )
+            elif face5[5] == face5[4] and face2[3] == face2[4]:
+                Lf()
+                U2f()
+                LPf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                LPf()
+                Uf()
+                Lf()
+                # )
+            elif face5[5] == face2[4] and face2[3] == face5[4]:
+                BPf()
+                Uf()
+                Bf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                LPf()
+                Uf()
+                Lf()
+                # )
+            elif face2[5] == face5[4] and face3[3] == face2[4]:
+                Ff()
+                UPf()
+                FPf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                LPf()
+                Uf()
+                Lf()
+                # )
+            elif face2[5] == face2[4] and face3[3] == face5[4]:
+                LPf()
+                U2f()
+                Lf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                LPf()
+                Uf()
+                Lf()
+                # )
+            elif face3[5] == face5[4] and face4[3] == face2[4]:
+                Rf()
+                Uf()
+                RPf()
+                Lf()
+                UPf()
+                LPf()
+                Uf()
+                # (
+                LPf()
+                Uf()
+                Lf()
+                # )
+            elif face3[5] == face2[4] and face4[3] == face5[4]:
+                Rf()
+                U2f()
+                RPf()
+                BPf()
+                UPf()
+                Bf()
+                U2f()
+                Lf()
+                Uf()
+                LPf()
+                UPf()
+                # (
+                Bf()
+                LPf()
+                BPf()
+                Lf()
+                # )
+            elif face4[5] == face5[4] and face5[3] == face2[4]:
+                Bf()
+                Uf()
+                BPf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                LPf()
+                Uf()
+                Lf()
+                # )
+            elif face4[5] == face2[4] and face5[3] == face5[4]:
+                RPf()
+                UPf()
+                Rf()
+                Uf()
+                Rf()
+                Uf()
+                RPf()
+                Uf()
+                # (
+                LPf()
+                Uf()
+                Lf()
+                # )
+        if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:
+            if face5[1] == face5[4] and face6[1] == face2[4]:
+                Uf()
+                RPf()
+                UPf()
+                Rf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
             elif face2[1] == face5[4] and face6[3] == face2[4]:
-
+                U2f()
+                RPf()
+                UPf()
+                Rf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
             elif face3[1] == face5[4] and face6[7] == face2[4]:
-
+                UPf()
+                RPf()
+                UPf()
+                Rf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
             elif face4[1] == face5[4] and face6[5] == face2[4]:
-
+                RPf()
+                UPf()
+                Rf()
+                # (
+                BPf()
+                UPf()
+                Bf()
+                # )
             elif face5[1] == face2[4] and face6[1] == face5[4]:
-
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
             elif face2[1] == face2[4] and face6[3] == face5[4]:
-
+                Uf()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
             elif face3[1] == face2[4] and face6[7] == face5[4]:
-
+                U2f()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
             elif face4[1] == face2[4] and face6[5] == face5[4]:
-
-            elif face5[1] == face5[5] and face2[3] == face2[4]:
-
-            elif face5[1] == face2[5] and face2[3] == face5[4]:
-
-            elif face2[1] == face5[5] and face3[3] == face2[4]:
-
-            elif face2[1] == face2[5] and face3[3] == face5[4]:
-
-            elif face3[1] == face5[5] and face4[3] == face2[4]:
-
-            elif face3[1] == face2[5] and face4[3] == face5[4]:
-
-            elif face4[1] == face5[5] and face5[3] == face2[4]:
-
-            elif face4[1] == face2[5] and face5[3] == face5[4]:
-
-        if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:  # se abs si trova i abs nella faccia 4
-          if face5[1] == face5[4] and face6[1] == face2[4]:
-
-            elif face2[1] == face5[4] and face6[3] == face2[4]:
-
-            elif face3[1] == face5[4] and face6[7] == face2[4]:
-
-            elif face4[1] == face5[4] and face6[5] == face2[4]:
-
-            elif face5[1] == face2[4] and face6[1] == face5[4]:
-
-            elif face2[1] == face2[4] and face6[3] == face5[4]:
-
-            elif face3[1] == face2[4] and face6[7] == face5[4]:
-
-            elif face4[1] == face2[4] and face6[5] == face5[4]:
-
-            elif face5[1] == face5[5] and face2[3] == face2[4]:
-
-            elif face5[1] == face2[5] and face2[3] == face5[4]:
-
-            elif face2[1] == face5[5] and face3[3] == face2[4]:
-
-            elif face2[1] == face2[5] and face3[3] == face5[4]:
-
-            elif face3[1] == face5[5] and face4[3] == face2[4]:
-
-            elif face3[1] == face2[5] and face4[3] == face5[4]:
-
-            elif face4[1] == face5[5] and face5[3] == face2[4]:
-
-            elif face4[1] == face2[5] and face5[3] == face5[4]:
-
-        if face4[0] == 1 and face3[2] == face5[4] and face6[8] == face2[4]:  # se abs si trova i abd nella faccia 4
-          if face5[1] == face5[4] and face6[1] == face2[4]:
-
-            elif face2[1] == face5[4] and face6[3] == face2[4]:
-
-            elif face3[1] == face5[4] and face6[7] == face2[4]:
-
-            elif face4[1] == face5[4] and face6[5] == face2[4]:
-
-            elif face5[1] == face2[4] and face6[1] == face5[4]:
-
-            elif face2[1] == face2[4] and face6[3] == face5[4]:
-
-            elif face3[1] == face2[4] and face6[7] == face5[4]:
-
-            elif face4[1] == face2[4] and face6[5] == face5[4]:
-
-            elif face5[1] == face5[5] and face2[3] == face2[4]:
-
-            elif face5[1] == face2[5] and face2[3] == face5[4]:
-
-            elif face2[1] == face5[5] and face3[3] == face2[4]:
-
-            elif face2[1] == face2[5] and face3[3] == face5[4]:
-
-            elif face3[1] == face5[5] and face4[3] == face2[4]:
-
-            elif face3[1] == face2[5] and face4[3] == face5[4]:
-
-            elif face4[1] == face5[5] and face5[3] == face2[4]:
-
-            elif face4[1] == face2[5] and face5[3] == face5[4]:
+                UPf()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
+            elif face5[5] == face5[4] and face2[3] == face2[4]:
+                Lf()
+                Uf()
+                LPf()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
+            elif face5[5] == face2[4] and face2[3] == face5[4]:
+                BPf()
+                UPf()
+                Bf()
+                Uf()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
+            elif face2[5] == face5[4] and face3[3] == face2[4]:
+                Ff()
+                U2f()
+                FPf()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
+            elif face2[5] == face2[4] and face3[3] == face5[4]:
+                LPf()
+                Uf()
+                Lf()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
+            elif face3[5] == face5[4] and face4[3] == face2[4]:
+                Rf()
+                UPf()
+                RPf()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
+            elif face3[5] == face2[4] and face4[3] == face5[4]:
+                FPf()
+                U2f()
+                Ff()
+                RPf()
+                Lf()
+                UPf()
+                Rf()
+                LPf()
+            elif face4[5] == face5[4] and face5[3] == face2[4]:
+                RPf()
+                UPf()
+                Rf()
+                Lf()
+                Uf()
+                LPf()
+                UPf()
+                for i in range(0, 2):
+                    BPf()
+                    UPf()
+                    Bf()
+                    Uf()
+            elif face4[5] == face2[4] and face5[3] == face5[4]:
+                RPf()
+                UPf()
+                Rf()
+                Lf()
+                Uf()
+                LPf()
+                U2f()
+                BPf()
+                UPf()
+                Bf()
+                Uf()
+                # (
+                LPf()
+                Bf()
+                Lf()
+                BPf()
+                # )
 
         # if white corners are in face5 (missing)
 
